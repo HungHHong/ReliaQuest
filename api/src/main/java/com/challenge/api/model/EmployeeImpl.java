@@ -3,6 +3,16 @@ package com.challenge.api.model;
 import java.time.Instant;
 import java.util.UUID;
 
+
+    /**
+     * Represents an Employee entity within the system.
+     *
+     * TODO:
+     *  - Define basic fields for an employee
+     *  - Generate getters and setters for each field
+     *  - Optionally override toString() for debug/logging purposes
+     */
+
 public class EmployeeImpl {
     private UUID uuid;
     private String firstName;
@@ -20,4 +30,8 @@ public class EmployeeImpl {
 
     public Instant getCreatedAt() { return createdAt; }
     public void setCreatedAt(Instant createdAt) { this.createdAt = createdAt; }
+
+
+
+        // TODO: Implement constructors, getters, and setters
 }

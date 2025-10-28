@@ -8,6 +8,19 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.server.ResponseStatusException;
 
+    /**
+     * REST controller for Employee API.
+     *
+     * Exposes 3 endpoints:
+     *  1. GET /api/employees         → getAllEmployees()
+     *  2. GET /api/employees/{uuid}  → getEmployeeByUuid()
+     *  3. POST /api/employees        → createEmployee()
+     *
+     * Notes:
+     *  - Annotate with @RestController and @RequestMapping("/api/employees")
+     *  - Inject EmployeeService via constructor
+     */
+
 /**
  * Fill in the missing aspects of this Spring Web REST Controller. Don't forget to add a Service layer.
  */
