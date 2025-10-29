@@ -1,0 +1,17 @@
+### Create new employee
+POST http://localhost:8080/api/v1/employee
+Content-Type: application/json
+
+{
+"firstName": "Ace",
+"lastName": "Alpha",
+"salary": 100000,
+"age": 29,
+"jobTitle": "System Analyst",
+"email": "Ace.Alpha@example.com",
+"contractHireDate": "2025-10-29T01:00:00Z",
+"contractTerminationDate": null
+}
+
+### Get all employees
+GET http://localhost:8080/api/v1/employee
