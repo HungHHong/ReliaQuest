@@ -44,7 +44,7 @@ public class EmployeeController {
      */
     // return all employees system have
     @GetMapping
-    public List<Employee> getAllEmployees() {
+    public List<EmployeeImpl> getAllEmployees() {
         return employeeService.getAllEmployees();
     }
 
@@ -55,6 +55,7 @@ public class EmployeeController {
      */
     // return single employee with UUID
     public EmployeeImpl getEmployeeByUuid(@PathVariable UUID uuid) {
+        EmployeeImpl employee = employeeService.getEmployeeByUuid(uuid);
         if (employee == null) {
             throw new ResponseStatusException(HttpStatus.NOT_FOUND, "Employee not found");
         }
