@@ -10,7 +10,8 @@ import java.util.*;
      * Stores employees in an in-memory map and provides simple CRUD-style methods.
      */
 
-public class EmployeeService {
+    @Service
+    public class EmployeeService {
     private final Map<UUID, EmployeeImpl> employeeStore = new HashMap<>();
 
     /** Mock Data for testing purposes */
